@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/design_default_color_primary"
+        android:textColorHighlight="#673AB7"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:constraintSet="@id/textView"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="92dp" />
+
+    <EditText
+        android:id="@+id/editTextNumberDecimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/hint"
+        android:inputType="numberDecimal"
+        android:textSize="24sp"
+        app:constraintSet="@id/editTextNumberDecimal"
+        app:layout_constraintDimensionRatio="ma"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="209dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="197dp"
+        android:layout_height="49dp"
+        android:text="@string/radCtoF"
+        android:textColor="@color/design_default_color_secondary_variant"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:constraintSet="@id/radioButton"
+        tools:layout_editor_absoluteX="95dp"
+        tools:layout_editor_absoluteY="351dp" />
+
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="205dp"
+        android:layout_height="44dp"
+        android:text="@string/radFtoC"
+        android:textColor="@color/design_default_color_secondary_variant"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:constraintSet="@id/radioButton"
+        tools:layout_editor_absoluteX="95dp"
+        tools:layout_editor_absoluteY="426dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="232dp"
+        android:layout_height="64dp"
+        android:text="@string/btnconvert"
+        android:textColorHighlight="@color/design_default_color_surface"
+        android:textSize="24sp"
+        app:constraintSet="@id/button"
+        tools:layout_editor_absoluteX="78dp"
+        tools:layout_editor_absoluteY="552dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
